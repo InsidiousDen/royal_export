@@ -1,0 +1,23 @@
+.category-item {
+  display: flex !important;
+  gap: 10px;
+  align-items: center;
+}
+
+.categories-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 24px 10vw;
+}
+
+.categories {
+  width: 80%;
+}
+
+input {
+  padding: 5px 0px;
+  border: none;
+  caret-color: white;
+  color: white;
+}

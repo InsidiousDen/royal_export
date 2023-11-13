@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "KarlaRegular";
+  src: url("./assets/fonts/Karla-Regular.ttf");
+}
+
+@font-face {
+  font-family: "KarlaBold";
+  src: url("./assets/fonts/Karla-Bold.ttf");
+}
+@font-face {
+  font-family: "MontserratBI";
+  src: url("./assets/fonts/Montserrat-BlackItalic.ttf");
+}
