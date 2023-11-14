@@ -39,7 +39,11 @@ export const Game = ({ img, title, openPopup }) => {
               NetEnt
             </Text>
           </div>
-          <img onClick={openPopup} src={playImg} style={{ height: 50 }} />
+          <img
+            onClick={openPopup}
+            src={playImg}
+            style={{ height: 50, marginBottom: 3 }}
+          />
           <Text
             onClick={openPopup}
             color={EColors.black}
