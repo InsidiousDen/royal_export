@@ -16,6 +16,8 @@ import { ChevronDown } from "./ChevronDown";
 import { Circle } from "./Circle";
 import { Tournament } from "./Tournament";
 import { Game2 } from "./Game2";
+import { Go } from "./Go";
+import { FullScreen } from "./FullScreen";
 export const Icons = {
   Search,
   Chat,
@@ -35,4 +37,6 @@ export const Icons = {
   Menu,
   ChevronDown,
   Tournament,
+  Go,
+  FullScreen,
 };

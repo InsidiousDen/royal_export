@@ -4,6 +4,7 @@
   overflow: hidden;
   position: relative;
   border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
 .card {
@@ -14,7 +15,15 @@
   object-fit: contain;
   border-radius: 10px;
 }
+.card-wrapper:hover {
+  transform: scale(1.05);
+}
+
 .card-hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
   transition: opacity 0.3s ease;
   position: absolute;
@@ -22,5 +31,10 @@
   height: calc(100% - 40px) !important;
   left: 10px;
   width: calc(100% - 20px) !important;
-  background-color: yellow;
+  background: linear-gradient(
+    180deg,
+    rgba(233, 177, 12, 1) 20%,
+    rgba(233, 177, 12, 0.7665660014005602) 50%,
+    rgba(233, 177, 12, 1) 88%
+  );
 }

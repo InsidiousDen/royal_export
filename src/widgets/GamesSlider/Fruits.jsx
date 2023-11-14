@@ -18,8 +18,9 @@ import React from "react";
 import Slider from "react-slick";
 import { Text } from "../../shared/text/Text";
 import { useRef } from "react";
+import { Game } from "../../entities/Game/Game";
 
-export const Fruits = () => {
+export const Fruits = ({ openPopup }) => {
   const settings = {
     dots: false,
     arrows: false,
@@ -82,8 +83,8 @@ export const Fruits = () => {
               alignItems: "center",
             }}
           >
-            <img className="cup card" src={gameSlide1} alt="" />
-            <img className="cup card" src={gameSlide2} alt="" />
+            <Game img={gameSlide1} openPopup={openPopup} />
+            <Game img={gameSlide2} openPopup={openPopup} />
           </div>
           <div
             style={{
@@ -93,8 +94,8 @@ export const Fruits = () => {
               alignItems: "center",
             }}
           >
-            <img className="cup card" src={gameSlide3} alt="" />
-            <img className="cup card" src={gameSlide4} alt="" />
+            <Game img={gameSlide3} openPopup={openPopup} />
+            <Game img={gameSlide4} openPopup={openPopup} />
           </div>
           <div
             style={{
@@ -103,8 +104,8 @@ export const Fruits = () => {
               alignItems: "center",
             }}
           >
-            <img className="cup card" src={gameSlide5} alt="" />
-            <img className="cup card" src={gameSlide6} alt="" />
+            <Game img={gameSlide5} openPopup={openPopup} />
+            <Game img={gameSlide6} openPopup={openPopup} />
           </div>
           <div
             style={{
@@ -113,8 +114,8 @@ export const Fruits = () => {
               alignItems: "center",
             }}
           >
-            <img className="cup card" src={gameSlide7} alt="" />
-            <img className="cup card" src={gameSlide8} alt="" />
+            <Game img={gameSlide7} openPopup={openPopup} />
+            <Game img={gameSlide8} openPopup={openPopup} />
           </div>
           <div
             style={{
@@ -123,8 +124,8 @@ export const Fruits = () => {
               alignItems: "center",
             }}
           >
-            <img className="cup card" src={gameSlide9} alt="" />
-            <img className="cup card" src={gameSlide10} alt="" />
+            <Game img={gameSlide9} openPopup={openPopup} />
+            <Game img={gameSlide10} openPopup={openPopup} />
           </div>
           <div
             style={{
@@ -133,8 +134,8 @@ export const Fruits = () => {
               alignItems: "center",
             }}
           >
-            <img className="cup card" src={gameSlide1} alt="" />
-            <img className="cup card" src={gameSlide2} alt="" />
+            <Game img={gameSlide1} openPopup={openPopup} />
+            <Game img={gameSlide2} openPopup={openPopup} />
           </div>
           <div
             style={{
@@ -143,8 +144,8 @@ export const Fruits = () => {
               alignItems: "center",
             }}
           >
-            <img className="cup card" src={gameSlide3} alt="" />
-            <img className="cup card" src={gameSlide4} alt="" />
+            <Game img={gameSlide3} openPopup={openPopup} />
+            <Game img={gameSlide4} openPopup={openPopup} />
           </div>
         </Slider>
       </div>

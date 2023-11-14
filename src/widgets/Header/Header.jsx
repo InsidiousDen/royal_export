@@ -40,7 +40,7 @@ const subHeaderListData = [
   },
 ];
 
-export const Header = () => {
+export const Header = ({ subheaderShown = true }) => {
   const onSearchButtonPress = () => {
     console.log("search");
   };
@@ -88,27 +88,29 @@ export const Header = () => {
           </Button>
         </div>
       </div>
-      <div className="sub-header">
-        {subHeaderListData.map((item) => {
-          return (
-            <div className="sub-header-item cup" key={item.name}>
-              <Text
-                cup
-                ff={EFonts.MontserratBI}
-                fz={19}
-                style={{ zIndex: 10, maxWidth: "60%" }}
-              >
-                {item.name}
-              </Text>
-              <img
-                className="sub-header-item-img"
-                src={item.img}
-                alt={item.name}
-              />
-            </div>
-          );
-        })}
-      </div>
+      {subheaderShown && (
+        <div className="sub-header">
+          {subHeaderListData.map((item) => {
+            return (
+              <div className="sub-header-item cup" key={item.name}>
+                <Text
+                  cup
+                  ff={EFonts.MontserratBI}
+                  fz={19}
+                  style={{ zIndex: 10, maxWidth: "60%" }}
+                >
+                  {item.name}
+                </Text>
+                <img
+                  className="sub-header-item-img"
+                  src={item.img}
+                  alt={item.name}
+                />
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 };

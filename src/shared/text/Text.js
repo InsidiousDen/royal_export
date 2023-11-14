@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export const Text = ({
   fz,
+  onClick,
   ff,
   color,
   children,
@@ -11,14 +12,17 @@ export const Text = ({
   hoverColor,
   wt,
   style,
+  underline,
 }) => {
   const [hover, setHover] = useState(false);
   return (
     <p
+      onClick={onClick}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       style={{
         ...style,
+        textDecoration: underline ? "underline" : "none",
         transition: wt ? "none" : "color 0.3s ease",
         cursor: cup ? "pointer" : "auto",
         fontSize: fz ?? 12,

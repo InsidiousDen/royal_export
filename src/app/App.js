@@ -9,8 +9,17 @@ import { EColors } from "../shared/styles";
 import { GameSlider } from "../widgets/GamesSlider/";
 import { Header } from "../widgets/Header/Header";
 import { MainSlider } from "../widgets/MainSlider/Slider";
+import { useState } from "react";
+import { Popups } from "../widgets/popups";
 
 export function App() {
+  const [demoPopupShown, setDemoPopupShown] = useState(false);
+  const closeDemoPopup = () => {
+    setDemoPopupShown(false);
+  };
+  const openDemoPopup = () => {
+    setDemoPopupShown(true);
+  };
   return (
     <div
       style={{
@@ -21,15 +30,22 @@ export function App() {
       }}
       className="App"
     >
-      <Header />
-      <MainSlider />
-      <Categories />
-      <GameSlider.Popular />
-      <GameSlider.Winners />
-      <GameSlider.New />
-      <GameSlider.Tournament />
-      <GameSlider.Fruits />
-      <GameSlider.Providers />
+      <Header subheaderShown={!demoPopupShown} />
+
+      {!demoPopupShown && (
+        <>
+          <MainSlider />
+          <Categories />
+          <GameSlider.Popular openPopup={openDemoPopup} />
+          <GameSlider.Winners />
+          <GameSlider.New openPopup={openDemoPopup} />
+          <GameSlider.Tournament />
+          <GameSlider.Fruits openPopup={openDemoPopup} />
+          <GameSlider.Providers />
+        </>
+      )}
+
+      {demoPopupShown && <Popups.Demo closePopup={closeDemoPopup} />}
     </div>
   );
 }
