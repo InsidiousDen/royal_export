@@ -1,16 +1,19 @@
 import "./styles.css";
-import React from "react";
+
 import {
+  Icons,
   demoBgImg,
   demoHeroImg,
   heartGreyImg,
-  Icons,
   xImg,
 } from "../../../assets";
-import { EColors } from "../../../shared/styles";
-import { Text } from "../../../shared/text";
-import { EFonts } from "../../../shared/styles/fonts";
+
 import { Button } from "../../../shared/button/Button";
+import { EColors } from "../../../shared/styles";
+import { EFonts } from "../../../shared/styles/fonts";
+import React from "react";
+import { Text } from "../../../shared/text";
+
 export const Demo = ({ closePopup }) => {
   const handleClosePopup = () => {
     closePopup && closePopup();
@@ -23,7 +26,7 @@ export const Demo = ({ closePopup }) => {
           width: 1200,
           display: "flex",
           flexDirection: "column",
-          height: 870,
+          height: "70vh",
           zIndex: 1,
           borderRadius: 10,
           overflow: "hidden",
@@ -79,14 +82,27 @@ export const Demo = ({ closePopup }) => {
             </Text>
           </div>
         </div>
-
+        {/* <iframe
+          title="demo"
+          height="100%"
+          width="100%"
+          frameborder="0"
+          scrolling="no"
+          tabindex="0"
+          _ngcontent-ng-c2129255083=""
+          allowfullscreen=""
+          allow="autoplay"
+          id="slot"
+          src="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20doghousemh&amp;lang=ro&amp;lobbyUrl=https%253A%252F%252Fwinboss.ro%252Fcasino-games%252Fslots%252Fthe-dog-house-multihold%252Ffun&amp;stylename=winbossro_winbossro&amp;isGameUrlApiCalled=true"
+          class="ng-star-inserted"
+        ></iframe> */}
         <img src={demoHeroImg} style={{ height: 840 }} alt="" />
       </div>
       <div
         style={{
           zIndex: 2,
           marginLeft: 10,
-          height: 870,
+          height: "70vh",
           display: "flex",
           flexDirection: "column",
           gap: 10,
