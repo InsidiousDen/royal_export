@@ -56,7 +56,7 @@ export const Categories = () => {
         </Slider>
       </div>
       <div className="flex-r">
-        <div className="flex-r">
+        <div className="flex-r" style={{ marginRight: 20 }}>
           <div
             onClick={goLeft}
             className="cup"

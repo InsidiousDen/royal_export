@@ -74,10 +74,7 @@ export const MainSlider = () => {
     speed: 700,
     slidesToShow: 1,
     lazyLoad: true,
-    autoplay: true,
-    autoplaySpeed: 8000,
-    pauseOnFocus: true,
-    pauseOnHover: true,
+    autoplay: false,
     slidesToScroll: 1,
     beforeChange: (current, next) => {
       setActiveSlide(next + 1);
@@ -106,7 +103,7 @@ export const MainSlider = () => {
         {sliderData.map((item, index) => {
           return (
             <div key={index}>
-              <img src={Slide1} alt="" />
+              <img style={{ height: "100%" }} src={Slide1} alt="" />
               <div
                 className="slider-content"
                 style={{

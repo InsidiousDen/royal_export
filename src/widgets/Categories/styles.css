@@ -8,11 +8,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 24px 10vw;
+  margin: 24px 11vw;
 }
 
 .categories {
-  width: 80%;
+  width: 75%;
 }
 
 input {
