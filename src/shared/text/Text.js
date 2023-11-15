@@ -6,6 +6,7 @@ export const Text = ({
   fz,
   onClick,
   ff,
+  lh,
   color,
   children,
   cup,
@@ -25,6 +26,7 @@ export const Text = ({
         textDecoration: underline ? "underline" : "none",
         transition: wt ? "none" : "color 0.3s ease",
         cursor: cup ? "pointer" : "auto",
+        lineHeight: lh + "px" ?? fz + 2 + "px" ?? 14,
         fontSize: fz ?? 12,
         fontFamily: ff ?? EFonts.KarlaRegular,
         color: hover

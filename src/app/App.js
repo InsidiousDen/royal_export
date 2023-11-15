@@ -11,6 +11,8 @@ import { Header } from "../widgets/Header/Header";
 import { MainSlider } from "../widgets/MainSlider/Slider";
 import { useState } from "react";
 import { Popups } from "../widgets/popups";
+import { BottomContent } from "../widgets/BottomContent";
+import { Footers } from "../widgets/footers";
 
 export function App() {
   const [demoPopupShown, setDemoPopupShown] = useState(false);
@@ -41,7 +43,12 @@ export function App() {
           <GameSlider.New openPopup={openDemoPopup} />
           <GameSlider.Tournament />
           <GameSlider.Fruits openPopup={openDemoPopup} />
+          <BottomContent />
           <GameSlider.Providers />
+          <Footers.First />
+          <Footers.Second />
+          <Footers.Third />
+          <Footers.Fourth />
         </>
       )}
 
