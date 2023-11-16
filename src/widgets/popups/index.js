@@ -1,3 +1,3 @@
 import { Demo } from "./demo";
-
-export const Popups = { Demo };
+import { Search } from "./search";
+export const Popups = { Demo, Search };

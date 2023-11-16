@@ -40,20 +40,30 @@ const subHeaderListData = [
   },
 ];
 
-export const Header = ({ subheaderShown = true }) => {
+export const Header = ({
+  subheaderShown = true,
+  offset,
+  setSearchPopupShown,
+}) => {
   const onSearchButtonPress = () => {
-    console.log("search");
+    setSearchPopupShown(true);
   };
+
   const onChatButtonPress = () => {
     console.log("chat");
   };
+
   return (
     <div className="header-wrapper">
       <div style={{ backgroundColor: EColors.grey2 }} className="header">
         <img className="header-img" src={logoImg} alt="logo" />
 
         <div className="header-right">
-          <Button hoverColor={EColors.black} onClick={onSearchButtonPress}>
+          <Button
+            width={40}
+            hoverColor={EColors.black}
+            onClick={onSearchButtonPress}
+          >
             <Icons.Search size={22} />
           </Button>
           <div className="header-right-link">
@@ -88,11 +98,24 @@ export const Header = ({ subheaderShown = true }) => {
           </Button>
         </div>
       </div>
+
       {subheaderShown && (
-        <div className="sub-header">
+        <div
+          style={{ opacity: subheaderShown ? 1 : 0 }}
+          className={
+            offset > 50 ? "sub-header sub-header-hidden" : "sub-header"
+          }
+        >
           {subHeaderListData.map((item) => {
             return (
-              <div className="sub-header-item cup" key={item.name}>
+              <div
+                className={
+                  offset > 50
+                    ? "sub-header-item sub-header-item-hidden cup"
+                    : "sub-header-item cup"
+                }
+                key={item.name}
+              >
                 <Text
                   cup
                   ff={EFonts.MontserratBI}
@@ -111,6 +134,37 @@ export const Header = ({ subheaderShown = true }) => {
           })}
         </div>
       )}
+
+      <div
+        style={{ backgroundColor: EColors.grey2 }}
+        className={
+          offset > 50
+            ? "small-sub-header"
+            : "small-sub-header small-sub-header-hidden"
+        }
+      >
+        {[
+          "Slots",
+          "Live Casino",
+          "Wheel of Fortune",
+          "Tournament",
+          "Daily Missions",
+        ].map((item) => {
+          return (
+            <Button
+              bgColor={EColors.grey2}
+              borderHover={EColors.yellow}
+              pv={10}
+              ph={16}
+              fz={18}
+              ff={EFonts.MontserratBI}
+              text={item}
+              textColor={EColors.white}
+              border={EColors.grey}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

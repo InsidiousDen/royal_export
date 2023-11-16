@@ -11,6 +11,8 @@ export const Button = ({
   ph,
   p,
   height,
+  border,
+  borderHover,
   width,
   size,
   radius,
@@ -36,16 +38,15 @@ export const Button = ({
         backgroundColor: hover
           ? hoverColor ?? bgColor ?? EColors.grey
           : bgColor ?? EColors.grey,
-        paddingLeft: ph ?? 15,
-        paddingRight: ph ?? 15,
-        paddingTop: pv ?? 15,
-        paddingBottom: pv ?? 15,
-        padding: p ?? 0,
+        padding: `${p ?? pv ?? 0}px ${p ?? ph ?? 0}px`,
         display: "flex",
+        border: border
+          ? `1px solid ${hover ? borderHover ?? border : border}`
+          : "none",
         justifyContent: "center",
         alignItems: "center",
         height: size ?? height ?? 40,
-        width: size ?? width ?? 40,
+        width: size ?? width ?? "auto",
         borderRadius: radius ?? 10,
       }}
     >
