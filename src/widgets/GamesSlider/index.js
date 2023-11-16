@@ -4,7 +4,7 @@ import { Popular } from "./Popular";
 import { Providers } from "./Providers";
 import { Tournament } from "./Tournament";
 import { Winners } from "./Winners";
-
+import { Recommended } from "./Recommended";
 export const GameSlider = {
   New,
   Winners,
@@ -12,4 +12,5 @@ export const GameSlider = {
   Tournament,
   Fruits,
   Providers,
+  Recommended,
 };

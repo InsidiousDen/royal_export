@@ -9,17 +9,31 @@ import { EColors } from "../shared/styles";
 import { GameSlider } from "../widgets/GamesSlider/";
 import { Header } from "../widgets/Header/Header";
 import { MainSlider } from "../widgets/MainSlider/Slider";
-import { useState } from "react";
 import { Popups } from "../widgets/popups";
+import { BottomContent } from "../widgets/BottomContent";
+import { Footers } from "../widgets/footers";
+import { useEffect, useState } from "react";
 
 export function App() {
   const [demoPopupShown, setDemoPopupShown] = useState(false);
+  const [searchPopupShown, setSearchPopupShown] = useState(false);
+  const [offset, setOffset] = useState(0);
   const closeDemoPopup = () => {
     setDemoPopupShown(false);
   };
   const openDemoPopup = () => {
     setDemoPopupShown(true);
   };
+  useEffect(() => {
+    window.addEventListener(
+      "scroll",
+      () => {
+        setOffset(window.scrollY);
+      },
+      []
+    );
+  }, [offset]);
+
   return (
     <div
       style={{
@@ -30,7 +44,11 @@ export function App() {
       }}
       className="App"
     >
-      <Header subheaderShown={!demoPopupShown} />
+      <Header
+        setSearchPopupShown={setSearchPopupShown}
+        offset={offset}
+        subheaderShown={!demoPopupShown && !searchPopupShown}
+      />
 
       {!demoPopupShown && (
         <>
@@ -41,7 +59,16 @@ export function App() {
           <GameSlider.New openPopup={openDemoPopup} />
           <GameSlider.Tournament />
           <GameSlider.Fruits openPopup={openDemoPopup} />
+          <BottomContent />
           <GameSlider.Providers />
+          <Footers.First />
+          <Footers.Second />
+          <Footers.Third />
+          <Footers.Fourth />
+
+          {searchPopupShown && (
+            <Popups.Search setSearchPopupShown={setSearchPopupShown} />
+          )}
         </>
       )}
 

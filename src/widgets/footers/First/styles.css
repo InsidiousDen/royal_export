@@ -1,0 +1,15 @@
+.footer-1-wrapper {
+  width: 100vw;
+  height: 380px;
+  margin-top: 95px;
+}
+
+.footer-1 {
+  padding: 45px 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-1-col-2 {
+  width: 490px;
+}
