@@ -93,7 +93,11 @@ export const Header = ({
             />
           </div>
           <Languages />
-          <Button hoverColor={EColors.black} onClick={onChatButtonPress}>
+          <Button
+            width={40}
+            hoverColor={EColors.black}
+            onClick={onChatButtonPress}
+          >
             <Icons.Chat size={22} />
           </Button>
         </div>

@@ -31,10 +31,11 @@
   height: calc(100% - 40px) !important;
   left: 10px;
   width: calc(100% - 20px) !important;
+
   background: linear-gradient(
     180deg,
     rgba(233, 177, 12, 1) 20%,
-    rgba(233, 177, 12, 0.7665660014005602) 50%,
+    rgba(233, 177, 12, 0.6665660014005602) 50%,
     rgba(233, 177, 12, 1) 88%
   );
 }

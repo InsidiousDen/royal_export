@@ -79,8 +79,15 @@ export const Demo = ({ closePopup }) => {
             </Text>
           </div>
         </div>
-
-        <img src={demoHeroImg} style={{ height: 840 }} alt="" />
+        <div style={{ height: 840, width: "100%" }}>
+          <iframe
+            style={{ border: "none" }}
+            src="https://caocw.playngonetwork.com/casino/ContainerLauncher?gid=goldenticket2&demo=2&lang=ru_RU&pid=187&practice=1&channel=desktop&origin="
+            height="100%"
+            width="100%"
+            title="Golden Ticket 2 Casino"
+          />
+        </div>
       </div>
       <div
         style={{
@@ -111,7 +118,7 @@ export const Demo = ({ closePopup }) => {
         style={{
           cursor: "pointer",
           width: "100vw",
-          height: "100vh",
+          height: "auto",
           position: "absolute",
           top: 0,
           zIndex: 0,
