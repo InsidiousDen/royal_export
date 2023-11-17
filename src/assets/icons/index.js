@@ -21,6 +21,8 @@ import { FullScreen } from "./FullScreen";
 import { Like } from "./Like";
 import { Bomb } from "./Bomb";
 import { Microgaming } from "./Microgaming";
+import { X } from "./X";
+
 export const Icons = {
   Search,
   Chat,
@@ -45,4 +47,5 @@ export const Icons = {
   Tournament,
   Go,
   FullScreen,
+  X,
 };

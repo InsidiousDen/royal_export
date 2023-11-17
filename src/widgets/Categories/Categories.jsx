@@ -186,10 +186,15 @@ export const Categories = () => {
                       </Text>
                     </div>
                     <div
+                      className="dropdown-list"
                       style={{
-                        overflow: "scroll",
+                        overflowY: "scroll",
+                        overflowX: "hidden",
                         width: "100%",
                         maxHeight: 120,
+                        borderRadius: 10,
+                        scrollbarColor: EColors.greyText,
+                        scrollbarWidth: 5,
                       }}
                     >
                       {dropdownData.map((item) => {

@@ -17,6 +17,7 @@ import { useEffect, useState } from "react";
 export function App() {
   const [demoPopupShown, setDemoPopupShown] = useState(false);
   const [searchPopupShown, setSearchPopupShown] = useState(false);
+  const [morePopupShown, setMorePopupShown] = useState(false);
   const [offset, setOffset] = useState(0);
   const closeDemoPopup = () => {
     setDemoPopupShown(false);
@@ -40,7 +41,7 @@ export function App() {
         backgroundColor: EColors.black,
         height: "100%",
         width: "100%",
-        overflowX: "hidden",
+        overflow: "hidden",
       }}
       className="App"
     >
@@ -61,13 +62,16 @@ export function App() {
           <GameSlider.Fruits openPopup={openDemoPopup} />
           <BottomContent />
           <GameSlider.Providers />
-          <Footers.First />
+          <Footers.First setMorePopupShown={setMorePopupShown} />
           <Footers.Second />
           <Footers.Third />
           <Footers.Fourth />
 
           {searchPopupShown && (
             <Popups.Search setSearchPopupShown={setSearchPopupShown} />
+          )}
+          {morePopupShown && (
+            <Popups.More setMorePopupShown={setMorePopupShown} />
           )}
         </>
       )}

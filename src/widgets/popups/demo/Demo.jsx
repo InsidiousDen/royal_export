@@ -82,21 +82,15 @@ export const Demo = ({ closePopup }) => {
             </Text>
           </div>
         </div>
-        {/* <iframe
-          title="demo"
-          height="100%"
-          width="100%"
-          frameborder="0"
-          scrolling="no"
-          tabindex="0"
-          _ngcontent-ng-c2129255083=""
-          allowfullscreen=""
-          allow="autoplay"
-          id="slot"
-          src="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20doghousemh&amp;lang=ro&amp;lobbyUrl=https%253A%252F%252Fwinboss.ro%252Fcasino-games%252Fslots%252Fthe-dog-house-multihold%252Ffun&amp;stylename=winbossro_winbossro&amp;isGameUrlApiCalled=true"
-          class="ng-star-inserted"
-        ></iframe> */}
-        <img src={demoHeroImg} style={{ height: 840 }} alt="" />
+        <div style={{ height: 840, width: "100%" }}>
+          <iframe
+            style={{ border: "none" }}
+            src="https://caocw.playngonetwork.com/casino/ContainerLauncher?gid=goldenticket2&demo=2&lang=ru_RU&pid=187&practice=1&channel=desktop&origin="
+            height="100%"
+            width="100%"
+            title="Golden Ticket 2 Casino"
+          />
+        </div>
       </div>
       <div
         style={{
@@ -127,7 +121,7 @@ export const Demo = ({ closePopup }) => {
         style={{
           cursor: "pointer",
           width: "100vw",
-          height: "100vh",
+          height: "auto",
           position: "absolute",
           top: 0,
           zIndex: 0,

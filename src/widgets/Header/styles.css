@@ -95,21 +95,13 @@
   justify-content: space-between;
   align-items: center;
   width: 22.7rem;
-  background: linear-gradient(
-    90deg,
-    rgb(15, 15, 15) 46%,
-    rgba(233, 178, 12, 0.9) 100%
-  );
+  background: linear-gradient(90deg, #1b1e25 46%, #e9b20ce6);
   transition: all 0.3s ease;
   overflow: hidden;
 }
 
 .sub-header-item:hover {
-  background: linear-gradient(
-    90deg,
-    rgb(34, 34, 34) 46%,
-    rgb(254, 191, 0) 100%
-  );
+  background: linear-gradient(90deg, #1b1e25 46%, #febf00);
   transform: translateY(-5px);
 }
 

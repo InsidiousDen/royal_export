@@ -1,3 +1,4 @@
 import { Demo } from "./demo";
 import { Search } from "./search";
-export const Popups = { Demo, Search };
+import { More } from "./more";
+export const Popups = { Demo, Search, More };

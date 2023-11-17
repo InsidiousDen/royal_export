@@ -5,7 +5,10 @@ import { Text } from "../../../shared/text";
 import { Button } from "../../../shared/button";
 import { Icons } from "../../../assets/icons";
 import { EFonts } from "../../../shared/styles/fonts";
-export const First = () => {
+export const First = ({ setMorePopupShown }) => {
+  const onShowMorePress = () => {
+    setMorePopupShown(true);
+  };
   return (
     <div
       style={{ backgroundColor: EColors.grey2 }}
@@ -55,7 +58,12 @@ export const First = () => {
             </Text>
           </div>
           <div style={{ marginTop: 20 }}>
-            <Button bgColor={EColors.grey} height={34} width={133}>
+            <Button
+              onClick={onShowMorePress}
+              bgColor={EColors.grey}
+              height={34}
+              width={133}
+            >
               <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <Text fz={16} ff={EFonts.KarlaBold} color={EColors.white}>
                   Show More
