@@ -1,6 +1,6 @@
 .footer-1-wrapper {
   width: 100vw;
-  height: 380px;
+
   margin-top: 95px;
 }
 
@@ -11,5 +11,9 @@
 }
 
 .footer-1-col-2 {
-  width: 490px;
+  width: 25vw;
+}
+
+.footer-1-col-1 {
+  padding: 0px 10px 0px 0px;
 }

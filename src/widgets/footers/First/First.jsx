@@ -94,8 +94,8 @@ export const First = ({ setMorePopupShown }) => {
               style={{
                 caretColor: EColors.white,
                 color: EColors.white,
-                width: 483,
-                height: 137,
+                width: "25vw",
+                height: 120,
                 border: "none",
                 padding: 10,
                 borderWidth: 1,
@@ -108,7 +108,9 @@ export const First = ({ setMorePopupShown }) => {
           <div
             className="flex-r"
             style={{
-              marginTop: 10,
+              marginTop: 27,
+              flexWrap: "wrap",
+              width: "100%",
             }}
           >
             <Button
@@ -122,7 +124,12 @@ export const First = ({ setMorePopupShown }) => {
               width={148}
               height={34}
             />
-            <Text ff={EFonts.KarlaBold} fz={14} color={EColors.white}>
+            <Text
+              whiteSpace={"nowrap"}
+              ff={EFonts.KarlaBold}
+              fz={14}
+              color={EColors.white}
+            >
               Or Email us:{" "}
               <span className="cup" style={{ color: EColors.yellow }}>
                 feedback@royalbet24.com

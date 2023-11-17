@@ -248,7 +248,7 @@ export const Second = () => {
             </Text>
           </div>
           <div style={{ display: "flex", gap: 52 }}>
-            <Text>
+            <Text whiteSpace={"nowrap"}>
               Help:{" "}
               <span style={{ color: EColors.yellow }}>Help.RoyalBet.com</span>
             </Text>
