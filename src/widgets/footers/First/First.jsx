@@ -94,7 +94,7 @@ export const First = ({ setMorePopupShown }) => {
               style={{
                 caretColor: EColors.white,
                 color: EColors.white,
-                width: "25vw",
+                width: "24vw",
                 height: 120,
                 border: "none",
                 padding: 10,
