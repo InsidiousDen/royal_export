@@ -13,6 +13,7 @@ export const Text = ({
   hoverColor,
   wt,
   style,
+  whiteSpace,
   underline,
 }) => {
   const [hover, setHover] = useState(false);
@@ -23,6 +24,7 @@ export const Text = ({
       onMouseLeave={() => setHover(false)}
       style={{
         ...style,
+        whiteSpace: whiteSpace ?? "normal",
         textDecoration: underline ? "underline" : "none",
         transition: wt ? "none" : "color 0.3s ease",
         cursor: cup ? "pointer" : "auto",
