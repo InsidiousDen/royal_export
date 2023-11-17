@@ -23,7 +23,7 @@ export const MainSlider = () => {
       description: (
         <>
           <Text ff={EFonts.KarlaRegular} fz={"2rem"}>
-            150% UP TO <span className="yellow-text">1.500 USD</span> AND
+            150% UP TO <span className="yellow-text">1.500 USD</span> AND <br />
             <span className="yellow-text"> 150 + 50 </span>FREE SPINS
           </Text>
         </>
@@ -35,7 +35,7 @@ export const MainSlider = () => {
       description: (
         <>
           <Text ff={EFonts.KarlaRegular} fz={"2rem"}>
-            150% UP TO <span className="yellow-text">1.500 USD</span> AND
+            150% UP TO <span className="yellow-text">1.500 USD</span> AND <br />
             <span className="yellow-text"> 150 + 50 </span>FREE SPINS
           </Text>
         </>
@@ -47,7 +47,7 @@ export const MainSlider = () => {
       description: (
         <>
           <Text ff={EFonts.KarlaRegular} fz={"2rem"}>
-            150% UP TO <span className="yellow-text">1.500 USD</span> AND
+            150% UP TO <span className="yellow-text">1.500 USD</span> AND <br />
             <span className="yellow-text"> 150 + 50 </span>FREE SPINS
           </Text>
         </>
@@ -59,7 +59,7 @@ export const MainSlider = () => {
       description: (
         <>
           <Text ff={EFonts.KarlaRegular} fz={"2rem"}>
-            150% UP TO <span className="yellow-text">1.500 USD</span> AND
+            150% UP TO <span className="yellow-text">1.500 USD</span> AND <br />
             <span className="yellow-text"> 150 + 50 </span>FREE SPINS
           </Text>
         </>
