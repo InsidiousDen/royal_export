@@ -60,7 +60,7 @@ export const Providers = () => {
           style={{
             justifyContent: "space-between",
             display: "flex",
-            margin: "5vh 2vw 1vh 1vw",
+            margin: "2vh 2vw 1vh 1vw",
           }}
         >
           <div className="flex-r">

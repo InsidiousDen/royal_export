@@ -1,7 +1,7 @@
 .slider {
   width: 100vw;
   margin-top: 220px;
-  background-color: #1a1e24;
+  background-color: #0e1012;
   position: relative;
 }
 .slider img {
@@ -13,12 +13,12 @@
 .slider-content {
   position: absolute;
   top: 20%;
-  width: 40vw;
+  /* width: 45vw; */
   height: auto;
   z-index: 4;
   display: flex;
   flex-direction: column;
-  padding-left: 10vw;
+  padding-left: 11vw;
 }
 
 .slick-dots {
@@ -52,8 +52,8 @@
   transition: width 0.3s ease;
 }
 
-@media screen and (max-width: 1600px) {
+/* @media screen and (max-width: 1600px) {
   .slider-content {
     padding-left: 5vw;
   }
-}
+} */

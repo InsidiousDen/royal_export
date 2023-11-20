@@ -16,9 +16,19 @@ import { ChevronDown } from "./ChevronDown";
 import { Circle } from "./Circle";
 import { Tournament } from "./Tournament";
 import { Game2 } from "./Game2";
+import { Go } from "./Go";
+import { FullScreen } from "./FullScreen";
+import { Like } from "./Like";
+import { Bomb } from "./Bomb";
+import { Microgaming } from "./Microgaming";
+import { X } from "./X";
+
 export const Icons = {
   Search,
   Chat,
+  Bomb,
+  Like,
+  Microgaming,
   Play,
   New,
   Fire,
@@ -35,4 +45,7 @@ export const Icons = {
   Menu,
   ChevronDown,
   Tournament,
+  Go,
+  FullScreen,
+  X,
 };

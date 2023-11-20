@@ -1,0 +1,25 @@
+.popup-more-wrapper {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  /* z-index: 99; */
+  z-index: 106;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-more {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  top: 5vh;
+  z-index: 200;
+  left: 50%;
+  z-index: 100;
+  width: 464px;
+  transform: translate(-50%, 0%);
+  border-radius: 10px;
+  padding: 0px 0px 24px 0px;
+  overflow: hidden;
+}

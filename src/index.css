@@ -11,3 +11,7 @@
   font-family: "MontserratBI";
   src: url("./assets/fonts/Montserrat-BlackItalic.ttf");
 }
+@font-face {
+  font-family: "KarlaExtraBold";
+  src: url("./assets/fonts/Karla-ExtraBold.ttf");
+}

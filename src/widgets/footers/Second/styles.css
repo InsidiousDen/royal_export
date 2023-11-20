@@ -1,0 +1,19 @@
+.footer-2-wrapper {
+  width: 100vw;
+}
+
+.footer-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 10vw;
+  gap: 10vw;
+}
+
+.footer-2-col-1 {
+  display: flex;
+  gap: 10vw;
+}
+
+.footer-2-col-2 {
+  width: 25vw;
+}

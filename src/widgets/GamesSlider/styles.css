@@ -1,6 +1,25 @@
+.card-wrapper {
+  height: fit-content;
+  width: fit-content;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
 .card {
   width: 15vw;
-  height: 186px;
+  max-height: 186px;
   max-width: 280px;
-  margin: 20px 10px;
+  margin: 10px 10px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.card-hover {
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 10px;
+  height: calc(100% - 20px) !important;
+  left: 10px;
+  width: calc(100% - 20px) !important;
 }

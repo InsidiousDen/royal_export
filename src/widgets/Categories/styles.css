@@ -8,11 +8,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 24px 10vw;
+  margin: 24px 11vw;
 }
 
 .categories {
-  width: 80%;
+  width: 75%;
 }
 
 input {
@@ -20,4 +20,19 @@ input {
   border: none;
   caret-color: white;
   color: white;
+}
+
+.dropdown-list::-webkit-scrollbar {
+  border-radius: 10px;
+  color: slategray;
+
+  width: 3px;
+  height: 2px;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #0e1012;
+  color: white;
+  width: 3px;
 }
